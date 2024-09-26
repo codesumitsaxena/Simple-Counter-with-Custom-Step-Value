@@ -1,0 +1,139 @@
+/* Global Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 25%;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+/* Count Display */
+h2 {
+    font-size: 5rem;
+    color: #333;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+/* Button Styling */
+button {
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Increment Button */
+button.increment-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+button.increment-btn:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 20px rgba(0, 128, 0, 0.2);
+}
+
+/* Decrement Button */
+button.decrement-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button.decrement-btn:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 20px rgba(192, 57, 43, 0.2);
+}
+
+/* Reset Button */
+button.reset {
+    background-color: #f39c12;
+    color: white;
+}
+
+button.reset:hover {
+    background-color: #e67e22;
+    box-shadow: 0 6px 20px rgba(243, 156, 18, 0.2);
+}
+
+/* Button Click Animation */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Step Value Input */
+div p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 70px;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 10px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input Focus */
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    button {
+        font-size: 1.3rem;
+        padding: 10px 20px;
+    }
+
+    input[type="number"] {
+        width: 60px;
+    }
+}
+
+/* Hover Animation for the Whole Container */
+.container:hover {
+    transform: scale(1.05);
+}
